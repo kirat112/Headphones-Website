@@ -1,6 +1,6 @@
 import { UpdateFollower } from "react-mouse-follower";
 import "./App.css";
-import { Hero, Navbar } from "./index.js";
+import { Banner, Hero, Navbar, Services } from "./index.js";
 
 function App() {
   return (
@@ -14,8 +14,18 @@ function App() {
           }}
         >
           <Navbar />
+          <Hero />
         </UpdateFollower>
-        <Hero />
+        <UpdateFollower
+          mouseOptions={{
+            backgroundColor: "black",
+            zIndex: 999,
+            followSpeed: 1.5,
+          }}
+        >
+          <Services />
+        </UpdateFollower>
+        <Banner/>
       </main>
     </>
   );
