@@ -44,8 +44,8 @@ const Navbar = () => {
           {/* Logo Section */}
           <div>
             <a href="#" className="text-xl font-bold uppercase">
-              Playing /{" "}
-              <span className="text-white/70 font-extralight">Market</span>
+              Bass /{" "}
+              <span className="text-white/70 font-extralight">Beats</span>
             </a>
           </div>
           {/* menu Section */}

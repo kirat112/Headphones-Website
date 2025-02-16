@@ -1,7 +1,7 @@
-import Headphone4 from "../../assets/headphone4.png";
 import { motion } from "framer-motion";
 import { fadeUp } from "../services/Services";
 import { UpdateFollower } from "react-mouse-follower";
+import HeadphoneFront from "../../assets/headphones/JBL_TOUR_One M2_Product Image_Front_Black.webp"
 
 const Banner = () => {
   return (
@@ -14,7 +14,7 @@ const Banner = () => {
               initial={{ opacity: 0.5, x: -100, rotate: -180 }}
               whileInView={{ opacity: 1, x: 0, rotate: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
-              src={Headphone4}
+              src={HeadphoneFront}
               alt=""
               className="w-[300px] md:w-[400px] mx-auto"
             />

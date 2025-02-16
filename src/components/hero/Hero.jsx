@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Headphone1 from "../../assets/headphone.png";
-import Headphone2 from "../../assets/headphone2.png";
-import Headphone3 from "../../assets/headphone3.png";
+import TourOne from "../../assets/headphones/JBL_TOUR_One M2_Product Image_Hero_Champagne.webp";
+import Tune770 from "../../assets/headphones/JBL_TUNE_770NC.webp"
+import Sony from "../../assets/headphones/wh-ch520_beige01_D.png"
 import { FaWhatsapp } from "react-icons/fa";
 import { UpdateFollower } from "react-mouse-follower";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
@@ -38,33 +38,33 @@ const fadeUp = (delay) => {
 const headphoneData = [
   {
     id: 1,
-    image: Headphone1,
-    title: "Headphone Wireless",
-    price: "$199",
+    image: TourOne,
+    title: "JBL Tour One M2",
+    price: "₹17,999.00",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias impedit adipisci dolorem reiciendis quidem",
-    modal: "Modal Brown",
-    bgColor: "#8b5958",
+      "JBL Tour One M2’s True Adaptive Noise Cancelling technology tunes out distractions so you can enjoy your favorite playlists—or even the sound of silence—all powered by legendary Hi-Res certified JBL Pro Sound.",
+    modal: "Champagne",
+    bgColor: "#91908a",
   },
   {
     id: 2,
-    image: Headphone2,
-    title: "Headphone Wireless 2",
-    price: "$199",
+    image: Tune770,
+    title: "JBL Tune 770NC",
+    price: "₹7,999.00",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias impedit adipisci dolorem reiciendis quidem",
-    modal: "Lime Green",
-    bgColor: "#638153",
+      "JBL Tune 770NC’s True Adaptive Noise Cancelling technology blocks out distractions, letting you immerse yourself in your favorite playlists—or simply enjoy pure silence—all powered by legendary JBL Pure Bass Sound.",
+    modal: "Blue",
+    bgColor: "#4b5870",
   },
   {
-    id: 1,
-    image: Headphone3,
-    title: "Headphone Wireless 3",
-    price: "$199",
+    id: 3,
+    image: Sony,
+    title: "WH-CH520",
+    price: "₹5,990.00",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias impedit adipisci dolorem reiciendis quidem",
-    modal: "Ocean Blue",
-    bgColor: "#5d818c",
+      "Enjoy high sound quality all day long. The WH-CH520 headphones with up to 50 hours of battery life, stable connectivity, and enhanced call performance, meet the demands of your day.",
+    modal: "Beige",
+    bgColor: "#98897a",
   },
 ];
 const Hero = () => {
@@ -75,7 +75,7 @@ const Hero = () => {
   return (
     <div>
       <section className="bg-brandDark text-white font-varela">
-        <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[700px]">
+        <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
           {/* Headphone Info */}
           <div className="flex flex-col justify-center py-14 md:py-0 xl:max-w-[500px]">
             <div className="space-y-5 text-center md:text-left">
