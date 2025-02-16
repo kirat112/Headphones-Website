@@ -1,6 +1,6 @@
 import { UpdateFollower } from "react-mouse-follower";
 import "./App.css";
-import { Banner, BannerText, Hero, Navbar, Services } from "./index.js";
+import { Banner, BannerText, Blogs, Hero, Navbar, Services } from "./index.js";
 
 function App() {
   return (
@@ -24,9 +24,10 @@ function App() {
           }}
         >
           <Services />
+          <Banner />
+          <BannerText />
+          <Blogs />
         </UpdateFollower>
-        <Banner/>
-        <BannerText/>
       </main>
     </>
   );
