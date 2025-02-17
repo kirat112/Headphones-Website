@@ -59,7 +59,7 @@ const headphoneData = [
   {
     id: 3,
     image: Sony,
-    title: "WH-CH520",
+    title: "Sony WH-CH520",
     price: "₹5,990.00",
     description:
       "Enjoy high sound quality all day long. The WH-CH520 headphones with up to 50 hours of battery life, stable connectivity, and enhanced call performance, meet the demands of your day.",
