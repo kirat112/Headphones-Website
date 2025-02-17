@@ -23,7 +23,7 @@ function App() {
             followSpeed: 1.5,
           }}
         >
-          <Services />
+          {/* <Services /> */}
           <Banner />
           <BannerText />
           <Blogs />
