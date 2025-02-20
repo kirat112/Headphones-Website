@@ -24,7 +24,7 @@ function App() {
           }}
         >
           {/* <Services /> */}
-          <Banner />
+          {/* <Banner /> */}
           <BannerText />
           <Blogs />
           <Footer/>
