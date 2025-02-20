@@ -1,6 +1,6 @@
 import { UpdateFollower } from "react-mouse-follower";
 import "./App.css";
-import { Banner, BannerText, Blogs, Footer, Hero, Navbar, Services } from "./index.js";
+import { Banner, BannerText, Blogs, Footer, Hero, Navbar } from "./index.js";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           }}
         >
           {/* <Services /> */}
-          <Banner />
+          {/* <Banner /> */}
           <BannerText />
           <Blogs />
           <Footer/>

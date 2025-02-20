@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TourOne from "../../assets/headphones/JBL_TOUR_One M2_Product Image_Hero_Champagne.webp";
+import TourOne from "../../assets/headphones/JBL_TOUR_One M2_Product_Image_Hero_Champagne.webp";
 import Tune770 from "../../assets/headphones/JBL_TUNE_770NC.webp";
 import Sony from "../../assets/headphones/wh-ch520_beige01_D.png";
 import TourANC from "../../assets/headphoneInfo/jblTourOneANC.jpeg";
@@ -11,10 +11,13 @@ import TunePlayback from "../../assets/headphoneInfo/jblTunePlayback.webp";
 import SonySound from "../../assets/headphoneInfo/sonySound.webp";
 import SonyPair from "../../assets/headphoneInfo/sonyPair.webp";
 import SonyPlayback from "../../assets/headphoneInfo/sonyPlayback.webp";
+import TourBanner from "../../assets/headphones/JBL_TOUR_One_M2_Banner.webp"
+import TuneBanner from "../../assets/headphones/JBL_Tune_770NC_Banner.webp"
+import SonyBanner from "../../assets/headphones/Sony_WH-CH520_Banner.jpg"
 import { FaWhatsapp } from "react-icons/fa";
 import { UpdateFollower } from "react-mouse-follower";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
-import {Services} from "../../index.js";
+import {Banner, Services} from "../../index.js";
 
 const fadeUp = (delay) => {
   return {
@@ -49,6 +52,7 @@ const headphoneData = [
   {
     id: 1,
     image: TourOne,
+    bannerImage:TourBanner,
     title: "JBL Tour One M2",
     price: "₹17,999.00",
     description:
@@ -84,6 +88,7 @@ const headphoneData = [
     id: 2,
     image: Tune770,
     title: "JBL Tune 770NC",
+    bannerImage:TuneBanner,
     price: "₹7,999.00",
     description:
       "JBL Tune 770NC’s True Adaptive Noise Cancelling technology blocks out distractions, letting you immerse yourself in your favorite playlists—or simply enjoy pure silence—all powered by legendary JBL Pure Bass Sound.",
@@ -116,6 +121,7 @@ const headphoneData = [
   {
     id: 3,
     image: Sony,
+    bannerImage:SonyBanner,
     title: "Sony WH-CH520",
     price: "₹5,990.00",
     description:
@@ -149,13 +155,9 @@ const headphoneData = [
 ];
 const Hero = () => {
   const [activeData, setActiveData] = useState(headphoneData[0]);
-  const [activeHeadphoneName, setActiveHeadphoneName] = useState(
-    headphoneData[0].title
-  );
 
   const handleActiveData = (data) => {
     setActiveData(data);
-    setActiveHeadphoneName(data.title);
   };
 
   return (
@@ -323,6 +325,7 @@ const Hero = () => {
           }}
         >
           <Services activeHeadphone={activeData}/>
+          <Banner activeHeadphone={activeData}/>
         </UpdateFollower>
     </div>
   );

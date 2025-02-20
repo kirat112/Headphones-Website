@@ -30,32 +30,32 @@ export const fadeUp = (delay) => {
   };
 };
 
-const servicesData = [
-  {
-    id: 1,
-    title: "Security",
-    link: "#",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
-    icon: Icon1,
-    delay: 0.5,
-  },
-  {
-    id: 2,
-    title: "Guarantee",
-    link: "#",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
-    icon: Icon2,
-    delay: 0.8,
-  },
-  {
-    id: 3,
-    title: "Affordability",
-    link: "#",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
-    icon: Icon3,
-    delay: 1.1,
-  },
-];
+// const servicesData = [
+//   {
+//     id: 1,
+//     title: "Security",
+//     link: "#",
+//     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
+//     icon: Icon1,
+//     delay: 0.5,
+//   },
+//   {
+//     id: 2,
+//     title: "Guarantee",
+//     link: "#",
+//     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
+//     icon: Icon2,
+//     delay: 0.8,
+//   },
+//   {
+//     id: 3,
+//     title: "Affordability",
+//     link: "#",
+//     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
+//     icon: Icon3,
+//     delay: 1.1,
+//   },
+// ];
 
 // const jblTourOneInfo = [
 //   {
@@ -143,7 +143,7 @@ const Services = ({ activeHeadphone }) => {
           >
             Specifications
           </motion.h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="flex flex-wrap gap-6 justify-center">
             {activeHeadphone.specifications.map((data) => (
               <UpdateFollower
                 mouseOptions={{
@@ -165,7 +165,7 @@ const Services = ({ activeHeadphone }) => {
                   variants={fadeUp(data.delay)}
                   initial="hidden"
                   whileInView="show"
-                  className="flex flex-col justify-center items-center p-5 max-w-[400px] mx-auto shadow-lg rounded-lg bg-white"
+                  className="flex flex-col justify-center items-center p-5 max-w-[400px] mx-auto shadow-lg rounded-lg bg-white min-h-[600px]"
                 >
                   <img src={data.image} alt="" className="w-[400px] mb-4" />
                   <div className="text-center space-y-2">
