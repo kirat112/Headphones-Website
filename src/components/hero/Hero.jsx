@@ -3,7 +3,7 @@ import TourOne from "../../assets/headphones/JBL_TOUR_One M2_Product_Image_Hero_
 import Tune770 from "../../assets/headphones/JBL_TUNE_770NC.webp";
 import Sony from "../../assets/headphones/wh-ch520_beige01_D.png";
 import TourANC from "../../assets/headphoneInfo/jblTourOneANC.jpeg";
-import TourMIC from "../../assets/headphoneInfo/jblTourOneMIC.webp";
+// import TourMIC from "../../assets/headphoneInfo/jblTourOneMIC.webp";
 import TourPlayback from "../../assets/headphoneInfo/jblTourOnePlayback.webp";
 import TuneANC from "../../assets/headphoneInfo/jblTuneANC.webp";
 import TuneBt from "../../assets/headphoneInfo/jblTuneBt.webp";
@@ -71,7 +71,8 @@ const headphoneData = [
       {
         id: 2,
         name: "JBL Tour One M2",
-        image: TourMIC,
+        // image: TourMIC,
+        image:TourANC,
         infoTitle: "4-Mic Superior Calls with Voice Control",
         infoDesc: `The 4-mic crystal call algorithm of the JBL Tour One M2 allows you to have better conversations even in loud or windy environments or to get help from your preferred voice assistant. And with VoiceAware, you can choose how much of your own voice to hear by controlling the amount of mic input routed back into your earbuds.`,
       },

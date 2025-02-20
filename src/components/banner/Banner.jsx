@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../services/Services";
 import { UpdateFollower } from "react-mouse-follower";
-import HeadphoneFront from "../../assets/headphones/JBL_TOUR_One M2_Product Image_Front_Black.webp";
 
 const Banner = ({ activeHeadphone }) => {
   return (
