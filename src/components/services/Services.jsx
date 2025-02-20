@@ -18,32 +18,32 @@ export const fadeUp = (delay) => {
   };
 };
 
-const servicesData = [
-  {
-    id: 1,
-    title: "Security",
-    link: "#",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
-    icon: Icon1,
-    delay: 0.5,
-  },
-  {
-    id: 2,
-    title: "Guarantee",
-    link: "#",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
-    icon: Icon2,
-    delay: 0.8,
-  },
-  {
-    id: 3,
-    title: "Affordability",
-    link: "#",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
-    icon: Icon3,
-    delay: 1.1,
-  },
-];
+// const servicesData = [
+//   {
+//     id: 1,
+//     title: "Security",
+//     link: "#",
+//     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
+//     icon: Icon1,
+//     delay: 0.5,
+//   },
+//   {
+//     id: 2,
+//     title: "Guarantee",
+//     link: "#",
+//     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
+//     icon: Icon2,
+//     delay: 0.8,
+//   },
+//   {
+//     id: 3,
+//     title: "Affordability",
+//     link: "#",
+//     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla possimus repellendus sed fugit doloribus sunt aspernatur perspiciatis facere eveniet.",
+//     icon: Icon3,
+//     delay: 1.1,
+//   },
+// ];
 
 // const jblTourOneInfo = [
 //   {
